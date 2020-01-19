@@ -2,17 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E91E63">
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="109dp"
-        android:layout_marginBottom="389dp"
-        android:text="Cancel" />
+    android:background="#2CC09D9D">
 
     <Button
         android:id="@+id/button2"
@@ -20,17 +10,20 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="94dp"
-        android:layout_marginTop="292dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="294dp"
         android:text="Confirm" />
 
-    <TextView
-        android:id="@+id/textView"
+    <Button
+        android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="172dp"
-        android:text="Confirm Location" />
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="41dp"
+        android:text="Cancel" />
 
 </RelativeLayout>

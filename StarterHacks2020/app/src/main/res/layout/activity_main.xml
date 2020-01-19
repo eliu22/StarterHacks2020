@@ -7,9 +7,20 @@
     tools:context=".MainActivity">
 
     <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="85dp"
+        android:background="#FF2828"
         android:theme="@style/AppTheme.AppBarOverlay">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="431dp"
+            android:layout_height="81dp"
+            android:background="#FF2828"
+            android:backgroundTint="#FF2828"
+            android:foregroundTint="#FF2828"
+            android:src="@drawable/heart" />
 
         <TextView
             android:id="@+id/title"
@@ -18,32 +29,36 @@
             android:gravity="center"
             android:minHeight="?actionBarSize"
             android:padding="@dimen/appbar_padding"
-            android:text="CPR Alert"
             android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
 
-        <com.google.android.material.tabs.TabLayout
-            android:id="@+id/tabs"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="?attr/colorPrimary" />
+        <Button
+            android:id="@+id/button"
+            android:layout_width="300dp"
+            android:layout_height="181dp"
+            android:backgroundTint="#FF2828"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="EMERGENCY"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="37sp"
+            app:layout_anchor="@+id/view_pager"
+            app:layout_anchorGravity="center" />
 
     </com.google.android.material.appbar.AppBarLayout>
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="EMERGENCY"
-        app:layout_anchor="@+id/view_pager"
-        app:layout_anchorGravity="center" />
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/view_pager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="646dp"
+        android:foregroundTint="#FF2828"
         android:onClick="buttonOnClick"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="#EC6676" />
     </androidx.viewpager.widget.ViewPager>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

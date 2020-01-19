@@ -46,7 +46,7 @@ public class PlaceholderFragment extends Fragment {
     public View onCreateView(
             @NonNull LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
-        View root = inflater.inflate(R.layout.fragment_main, container, false);
+    /*    View root = inflater.inflate(R.layout.fragment_main, container, false);
         final TextView textView = root.findViewById(R.id.section_label);
         pageViewModel.getText().observe(this, new Observer<String>() {
             @Override
@@ -58,6 +58,16 @@ public class PlaceholderFragment extends Fragment {
         if (pageViewModel.getText().equals("Tab 1")){
 
         }
-        return root;
+        return root;*/
+        int index = pageViewModel.getIndex();
+        if (index == 1) {
+            View v = inflater.inflate(R.layout.fragment_main, container, false);
+            return v;
+        } else if (index == 2) {
+            View v = inflater.inflate(R.layout.tab3_fragment, container, false);
+            return v;
+        }
+        return null;
+
     }
 }
