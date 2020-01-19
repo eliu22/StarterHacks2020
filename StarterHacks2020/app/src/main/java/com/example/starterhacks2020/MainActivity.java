@@ -29,6 +29,15 @@ public class MainActivity extends AppCompatActivity {
         viewPager.setAdapter(sectionsPagerAdapter);
         TabLayout tabs = findViewById(R.id.tabs);
         tabs.setupWithViewPager(viewPager);
+    }
+
+        public void buttonOnClick(View v){
+            Button button = (Button) v;
+            ((Button) v).setText("clicked");
+            startActivity(new Intent(MainActivity.this,Pop.class));
+        }
+
+
         //FloatingActionButton fab = findViewById(R.id.fab);
 
         /*fab.setOnClickListener(new View.OnClickListener() {
@@ -39,6 +48,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });*/
 
-    }
+
 
 }

@@ -15,19 +15,15 @@ public class Fragment extends AppCompatActivity {
         setContentView(R.layout.fragment_main);
 
 
-        Button b = (Button) findViewById(R.id.button1);
+        Button button = (Button) findViewById(R.id.button1);
 
-        b.setOnClickListener(new View.OnClickListener(){
+        /*button.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
                 startActivity(new Intent(Fragment.this,Pop.class));
             }
-        });
+        });*/
     }
 
-    public void buttonOnClick(View v){
-        Button button = (Button) v;
-        ((Button) v).setText("clicked");
 
-    }
 }
