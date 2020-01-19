@@ -54,6 +54,10 @@ public class PlaceholderFragment extends Fragment {
                 textView.setText(s);
             }
         });
+
+        if (pageViewModel.getText().equals("Tab 1")){
+
+        }
         return root;
     }
 }
