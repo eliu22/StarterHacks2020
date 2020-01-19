@@ -39,19 +39,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });*/
 
-        Button b = (Button) findViewById(R.id.button);
-
-        b.setOnClickListener(new View.OnClickListener(){
-          @Override
-          public void onClick(View v){
-              startActivity(new Intent(MainActivity.this,Pop.class));
-          }
-        });
-
     }
-    public void buttonOnClick(View v){
-        Button button = (Button) v;
-        ((Button) v).setText("clicked");
 
-    }
 }

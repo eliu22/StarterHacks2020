@@ -20,4 +20,23 @@
         tools:layout_constraintLeft_creator="1"
         tools:layout_constraintTop_creator="1" />
 
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="300dp"
+        android:layout_height="181dp"
+        android:backgroundTint="#FF2828"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:onClick="buttonOnClick"
+        android:saveEnabled="true"
+        android:text="EMERGENCY"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="37sp"
+        app:layout_anchor="@+id/view_pager"
+        app:layout_anchorGravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

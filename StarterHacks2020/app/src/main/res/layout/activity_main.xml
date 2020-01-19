@@ -47,19 +47,6 @@
             android:layout_height="46dp"
             android:background="#EC6676" />
 
-    </androidx.viewpager.widget.ViewPager>
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="300dp"
-        android:layout_height="181dp"
-        android:backgroundTint="#FF2828"
-        android:fontFamily="sans-serif-condensed-medium"
-        android:text="EMERGENCY"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textSize="37sp"
-        app:layout_anchor="@+id/view_pager"
-        app:layout_anchorGravity="center" />
+</androidx.viewpager.widget.ViewPager>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
